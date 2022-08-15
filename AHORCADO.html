@@ -1,0 +1,80 @@
+<!DOCtype HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+		<title>El juego del ahorcado</title>
+       
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+
+	<body style="background: rgb(243, 174, 161);">
+        <header>
+            <img src="IMAGENES/Logo.png" id="hlogo">
+			<div class="score">Score: 0</div>
+			<div class="highscore">HighScore: 0</div>
+        </header>
+
+        <main>
+			
+			<section class="title">
+				<h1 id="nombre"><span>A</span><span>H</span><span>O</span><span>R</span><span>C</span><span>A</span><span>D</span><span>O</span></h1>
+           		<img src="IMAGENES/Group 5.png"id="dibujo">
+                <button class="actionButton" id="startButton">Iniciar juego</button>
+                <button class="actionButton" id="addWordButton">Agregar nueva palabra</button>
+			</section>
+			<section class="addWord">
+				<input type="text" maxlength="8" class="newWord" placeholder="Ingrese una palabra">
+				<div class="advertencia">
+					<img src="IMAGENES/Vector .png" id="vector"/>						
+					<h6 class= aviso> Máx. de 8 letras </h6>
+				</div>						
+				<div class="botoneraAdd">	
+						<button class="leftButton" id="saveButton"> Guardar y empezar </button>
+						<button class="rightButton" id="cancelButton"> Cancelar </button>						
+				</div>
+			</section>
+			<section class="game">
+				<div class="draw">
+					<img class="ahorcado" src="IMAGENES/imagen0.png" id="piso">
+					<img class="ahorcado" src="IMAGENES/imagen1.png" id="asta">
+					<img class="ahorcado" src="IMAGENES/imagen2.png" id="viga">
+					<img class="ahorcado" src="IMAGENES/imagen3.png" id="soga">
+					<img class="ahorcado" src="IMAGENES/imagen4.png" id="cabeza">
+					<img class="ahorcado" src="IMAGENES/imagen5.png" id="cuerpo">
+					<img class="ahorcado" src="IMAGENES/imagen6.png" id="piernad">
+					<img class="ahorcado" src="IMAGENES/imagen7.png" id="piernai">
+                    <img class="ahorcado" src="IMAGENES/imagen8.png" id="brazod">
+                    <img class="ahorcado" src="IMAGENES/imagen9.png" id="brazoi">
+					
+				</div>
+				<div class="terminado"></div>
+				<div class="win"></div>
+				<div class="lose"></div>			
+				<div class="rightWord"></div>
+				<div class="wrongWord"></div>
+				<textarea id="letraVirtual" type="text"> </textarea>
+				<div id="pausa">
+					<div id="juegopausa">JUEGO EN PAUSA</div>
+					<div id="continuar">Click aquí para reanudar</div>
+				</div>
+				<div class="botoneraGame">
+					<button class="leftButton" id="newGameButton"> Nuevo juego </button>
+					<button class="rightButton" id="returnButton"> Volver </button>
+				</div>			
+			</section>
+        </main>
+    
+		<footer>
+			<p id="desarrollo">Desarrollado por Analia Itati Rusconi</p>
+            
+		</footer>
+        <script src="juego-ahorcado.js"></script>
+    </body>
+   
+		
+        
